@@ -1,4 +1,4 @@
-import SelectCountry from './insurancePolicy/selectCountry';
+import SelectCountry from './insurancePolicy/SelectCountry';
 import CoverageType from './insurancePolicy/CoverageType';
 import StartDate from './insurancePolicy/StartDate';
 import EndDate from './insurancePolicy/EndDate';
@@ -6,6 +6,7 @@ import Purpose from './insurancePolicy/Purpose';
 import PhoneNumber from './insurancePolicy/PhoneNumber';
 import { useContext } from 'react';
 import { Context } from '../context/ContextProvider';
+
 
 function InsurancePolicy({ props }) {
   const {userData} = useContext(Context);
@@ -19,7 +20,7 @@ function InsurancePolicy({ props }) {
       <h2 className="text-3xl font-bold mb-4 text-blue-800">Покупка страхового полиса</h2>
 
       <form action="">
-        <SelectCountry />
+        <SelectCountry/>
         <CoverageType />
         <StartDate />
         <EndDate />
